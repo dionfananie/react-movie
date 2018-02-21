@@ -1,0 +1,14 @@
+@import '../vendors/bootstrap4.min.css';
+@import '../vendors/shards.min.css';
+@import './utils.scss';
+@import './color.scss';
+@import './icons.scss';
+@import './header.scss';
+@import './list-movies.scss';
+@import './detail-movie.scss';
+$color: #262828;
+$color: #262828;
+
+body {
+  color: $color;
+}

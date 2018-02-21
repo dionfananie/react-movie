@@ -1,0 +1,50 @@
+.card__list-movies{
+    .card{
+        width: 10rem;
+    }
+    .card-body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 5%;
+        height: 12rem;
+        width: 10rem;
+    }
+    .card-content{
+        position: absolute;
+        bottom: 0.5rem;
+        color: $light;
+        z-index: $z-20;
+        a,h5{
+            color: inherit;
+            margin: 0;
+        }
+    }
+    .card-rating{
+        color: $light;
+        font-size: 0.8rem;
+    }
+    .card-body-cover{
+        width: 10rem;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: $z-10;
+        background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.25));
+        @extend %fade;
+        &:hover{
+            background: rgba(0, 0, 0, 0.55);
+            .btn{
+                opacity: 1;
+            }
+
+        }
+        .btn{
+            opacity: 0;
+            position: absolute;
+            top: 45%;
+            left: 25%;
+            right: 25%;
+        }
+    }
+}
