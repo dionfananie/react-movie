@@ -16,9 +16,12 @@ const showImage = ({image}) =>{
 
 const Images = (props) =>{
     return(
-        <div className="col-md-4 my-4 card__detail-movies" key="1">
-            {showImage(props)}
+        <div className="container">
+            <div className="col-md-4 my-4 card__detail-movies" key="1">
+                {showImage(props)}
+            </div>
         </div>
+       
     )
 }
 
