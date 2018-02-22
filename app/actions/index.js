@@ -17,7 +17,7 @@ export function getListMovies() {
 export function getDetailMovies(id) {
     const req = axios.get(`http://api.tvmaze.com/shows/${id}`)
         .then(res=>{
-            console.log('detailMovies: ', res.data);
+            // console.log('detailMovies: ', res.data);
             return res.data
         });
     return{
