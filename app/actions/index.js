@@ -6,7 +6,7 @@ export function getListMovies() {
     const req = axios.get('http://api.tvmaze.com/shows')
         .then(res =>{
             // console.log('data: ',res.data.slice(0,5))
-            return res.data.slice(0,15)
+            return res.data.slice(0,20)
         } );
     return{
         type:'GET_LIST_MOVIES',

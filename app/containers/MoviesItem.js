@@ -27,11 +27,6 @@ class MoviesItem extends Component {
     }
 }
 
-const Image = (image) =>{
-    if (image) {
-        return image.image.original
-    }
-}
 function mapStateToProps(state) {
     let detailMovies = state.detailMovies.list
     if (detailMovies) {

@@ -3,10 +3,18 @@
     height: 100%;
     .card{
         height: 30rem;
-        .card-body{
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
+        .img__movie{
+            height: 100%;
+            width: auto;
         }
     }
+}
+
+.info__rating{
+    display: flex;
+    align-items: center;
+}
+
+.info__summary{
+    font-size: 0.8rem;
 }
