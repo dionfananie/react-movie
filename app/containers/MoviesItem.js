@@ -14,6 +14,7 @@ class MoviesItem extends Component {
     }
     componentWillUnmount() {
         this.props.clearSelectedMovies();
+        console.log('okeee')
     }
     render() {
         return (

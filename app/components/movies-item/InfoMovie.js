@@ -13,8 +13,14 @@ const titleMovie = ({info}) =>{
 }
 
 const descMovie = ({info}) =>{
-    if (info) {
+    if (!info) {
+        return(
+            <List/>
+        )
+    }
+    else if (info) {
         let summary =info.summary
+        console.log('data: ', info)
         return(
             <div>
                 <h4>{info.name}</h4>
@@ -30,11 +36,6 @@ const descMovie = ({info}) =>{
                 </section>
             </div>
            
-        )
-    }else{
-        return(
-            <MyLoader />
-            
         )
     }
 }
